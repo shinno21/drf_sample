@@ -4,6 +4,8 @@ from sampleapp import models
 
 
 class PostStatusFactory(factory.django.DjangoModelFactory):
+    """PostStatus のFactory
+    """
     class Meta:
         model = models.PostStatus
         django_get_or_create = ('cd',)
@@ -12,6 +14,8 @@ class PostStatusFactory(factory.django.DjangoModelFactory):
 
 
 class PostFactory(factory.django.DjangoModelFactory):
+    """Post のFactory
+    """
     class Meta:
         model = models.Post
     title = factory.Sequence(lambda n: 'test title {0}'.format(n))
@@ -22,6 +26,8 @@ class PostFactory(factory.django.DjangoModelFactory):
 
 
 class CommentFactory(factory.django.DjangoModelFactory):
+    """Comment のFactory
+    """
     class Meta:
         model = models.Comment
     post = factory.SubFactory(PostFactory)
