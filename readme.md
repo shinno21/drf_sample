@@ -22,4 +22,9 @@ python manage.py runserver --settings=drf_sample.local_settings
 
 * Python 3.8.0(※)
 
-※ 利用しているバージョンで動かない場合は、DjangoとDjango Restframeworkをダウングレードしてください
+* ※ 利用しているバージョンで動かない場合は、DjangoとDjango Restframeworkをダウングレードしてください
+
+## テストについて
+
+* 以下参照
+* https://qiita.com/shinno21/items/a42eea9b6ce959e106c0
