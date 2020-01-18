@@ -1,0 +1,16 @@
+[
+{
+ "model": "sampleapp.poststatus",
+ "pk": "00",
+ "fields": {
+  "name": "\u4e00\u6642\u4fdd\u5b58"
+ }
+},
+{
+ "model": "sampleapp.poststatus",
+ "pk": "01",
+ "fields": {
+  "name": "\u516c\u958b\u6e08"
+ }
+}
+]
