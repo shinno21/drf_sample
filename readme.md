@@ -24,6 +24,12 @@ python manage.py runserver --settings=drf_sample.local_settings
 
 * ※ 利用しているバージョンで動かない場合は、DjangoとDjango Restframeworkをダウングレードしてください
 
+## 必要なライブラリ
+
+* requirements.txt アプリケーションの稼働に必要なライブラリのリスト（プロダクション環境ではこちらを利用）
+* requirements_dev.txt 開発に必要なユーティリティを上記に加えた
+
+
 ## テストについて
 
 * 以下参照
