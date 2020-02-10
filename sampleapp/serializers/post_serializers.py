@@ -1,6 +1,7 @@
 # coding: utf-8
 from rest_framework import serializers, fields
 from sampleapp import models
+from datetime import datetime
 
 
 class PostSerializer(serializers.ModelSerializer):
@@ -29,3 +30,8 @@ class PostSerializer(serializers.ModelSerializer):
     # 子要素のコメントの数を取得して返却する
     def get_comment_count(self, obj):
         return models.Comment.objects.filter(post_id=obj.id).count()
+
+    def validate_cre_date(self, value):
+        if value < datetime.today().date():
+            raise serializers.ValidationError("作成日は当日以降を入力してください")
+        return value
